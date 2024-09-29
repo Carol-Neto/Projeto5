@@ -1,8 +1,9 @@
 import pandas as pd
 import plotly.express as px
 import streamlit as st
+from pathlib import Path
 
-car_data = pd.read_csv('vehicles_us.csv') # lendo os dados
+car_data = pd.read_csv(Path("../data/vehicles_us.csv")) # lendo os dados
 
 st.header('Dashboard de Veículos')
 
